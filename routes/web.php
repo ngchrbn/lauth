@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserController;
 use App\Models\User;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+//    dd(session());
+    if (session('user'))
+        session()->forget('user');
     return view('welcome');
 })
     ->name('login');
@@ -26,5 +30,10 @@ Route::post('/register', [UserController::class, 'store']);
 
 // Born same day
 Route::get('/born-same-day',[UserController::class, 'get'])
-    ->middleware('auth')
     ->name('born-same-day');
+
+Route::get('/profile', [UserController::class, 'profile'])
+    ->name('profile');
+
+Route::get('lang/{lang}', [\App\Http\Controllers\LanguageController::class, 'switch'])
+    ->name('lang.switch');

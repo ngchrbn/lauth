@@ -3,16 +3,17 @@
 @section('title', 'Actors born on the same day')
 
 @section('content')
-    <main class="flex items-center flex-col gap-4 py-6 justify-center mx-auto lg:h-screen lg:py-0">
+    <main class="flex items-center flex-col gap-4 py-6 px-4 justify-center mx-auto lg:h-screen lg:py-0">
         <div class="text-center mb-4">
-            <h2 class="text-3xl font-bold leading-none text-gray-900">Actors born the same day</h2>
+            <h2 class="text-3xl font-bold leading-none text-gray-900">{{__('messages.Actors_born_the_same_day')}}</h2>
         </div>
 
-        <a href="/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">Go to registration page</a>
+        <a href="/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">
+            {{__('messages.Go_to_registration_page')}}</a>
         <div class="w-full mx-auto max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
             <div class="flex justify-between text-center mb-4">
-                <h5 class="text-lg font-bold leading-none text-gray-900">Actor</h5>
-                <h5 class="text-lg font-bold leading-none text-gray-900">Birthdate</h5>
+                <h5 class="text-lg font-bold leading-none text-gray-900">{{__('messages.Actor')}}</h5>
+                <h5 class="text-lg font-bold leading-none text-gray-900">{{__('messages.Birthdate')}}</h5>
             </div>
             <div class="flow-root">
                 <ul role="list" class="divide-y divide-gray-200">

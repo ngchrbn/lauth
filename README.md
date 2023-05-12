@@ -11,9 +11,9 @@
 
 - [x] Send automatic email when a new user is registered.
 - [ ] Include one automated test function.
-- [ ] Add multi-language feature.(English and French)
+- [x] Add multi-language feature.(English and French)
 - [x] Server side validation.
-- [ ] Client side validation.
+- [x] Client side validation.
 - [ ] Support AJAX.
 - [x] Born-in the same day API.
 
