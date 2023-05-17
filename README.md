@@ -10,7 +10,7 @@
 ## About Laravel
 
 - [x] Send automatic email when a new user is registered.
-- [ ] Include one automated test function.
+- [x] Include one automated test function.
 - [x] Add multi-language feature.(English and French)
 - [x] Server side validation.
 - [x] Client side validation.
