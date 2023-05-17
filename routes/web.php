@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-//    dd(session());
     if (session('user'))
         session()->forget('user');
     return view('welcome');
@@ -25,7 +24,8 @@ Route::get('/', function () {
     ->name('login');
 
 // Create new user
-Route::post('/register', [UserController::class, 'store']);
+Route::post('/register', [UserController::class, 'store'])
+    ->name('register');
 
 
 // Born same day
