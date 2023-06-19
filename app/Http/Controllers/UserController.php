@@ -47,8 +47,8 @@ class UserController extends Controller
 
         session(['user' => $user]);
 
-//        // Send email to the admin
-//        Mail::to('ngchrbn@gmail.com')->send(new \App\Mail\NewUser($user));
+       // Send email to the admin
+       Mail::to('ngchrbn@gmail.com')->send(new \App\Mail\NewUser($user));
 
 
         return redirect('/born-same-day');
